@@ -1,0 +1,44 @@
+const Home = (props) => {
+  let SummaryOfContributions = 0;
+  let targetAmount = 10105000000;
+  let cnt = 0;
+
+  return (
+    <div className="center">
+      {props.arr.map((item) => {
+        cnt++;
+        SummaryOfContributions += item.sum;
+        return (
+          <p key={item.id}>
+            <OneDonation datails={item} />
+          </p>
+        );
+      })}
+
+      <div className="sum1">
+        <h2>
+          <span>{targetAmount}</span>
+        </h2>
+        <p>
+          <span>יעד</span>
+        </p>
+      </div>
+      <div className="sum2">
+        <h2>
+          <span>{Math.floor((SummaryOfContributions / targetAmount) * 100)}%</span>
+        </h2>
+        <p>
+          <span>אחוז התרומות</span>
+        </p>
+      </div>
+      <div className="sum3">
+        <h2>
+          <span>{SummaryOfContributions}</span>
+        </h2>
+        <p>
+          <span>סך התרומות</span>
+        </p>
+      </div>
+    </div>
+  );
+};
