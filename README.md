@@ -1,4 +1,4 @@
-![צילום מסך 2023-12-23 210646](https://github.com/miritoledano/DonationCampaign/assets/150906463/9a918817-d791-4f59-b821-caa49f0a3165)# 🌟 Donation Campaign 🌟
+ 🌟 Donation Campaign 🌟
 
 This application provides an immediate and convenient donation experience for users. The app allows you to view real-time updates on donation details.
 
@@ -28,6 +28,10 @@ I collaborated on this project with [Shira Kedem](https://github.com/ShiraKedem)
 Copyright © 2023 [Miriam Toldeo]
 
 ## 📷 Project Images 📷
+![צילום מסך 2023-12-23 210646](https://github.com/miritoledano/DonationCampaign/assets/150906463/90672bc5-ea89-48d6-86af-98d4e7ff04e6)
+![צילום מסך 2023-12-23 210657](https://github.com/miritoledano/DonationCampaign/assets/150906463/66add5a0-1e90-4556-a225-f1a06e1e6a5b)
+![צילום מסך 2023-12-23 210714](https://github.com/miritoledano/DonationCampaign/assets/150906463/e7c70b67-4c7b-40e8-89d8-633801646bf9)
+
 
 
 
