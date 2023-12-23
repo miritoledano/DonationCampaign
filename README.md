@@ -29,9 +29,11 @@ Copyright © 2023 [Miriam Toledano]
 
 ## 📷 Project Images 📷
 ![צילום מסך 2023-12-23 210646](https://github.com/miritoledano/DonationCampaign/assets/150906463/90672bc5-ea89-48d6-86af-98d4e7ff04e6)
-![image](https://github.com/miritoledano/DonationCampaign/assets/150906463/4db49837-b4ca-476f-88df-bc22edbfb279)
+![צילום מסך 2023-12-23 215633](https://github.com/miritoledano/DonationCampaign/assets/150906463/8cd8e94e-1594-4540-979f-882c7a0fa940)
+![צילום מסך 2023-12-23 210714](https://github.com/miritoledano/DonationCampaign/assets/150906463/3bde578c-e2a0-4fca-b16e-7f987d1b651a)
 
-![צילום מסך 2023-12-23 210714](https://github.com/miritoledano/DonationCampaign/assets/150906463/e7c70b67-4c7b-40e8-89d8-633801646bf9)
+
+
 
 
 
