@@ -1,10 +1,12 @@
-import OneDonation from "./OneDonation";
+
 import "./Nav.css";
 import { useContext } from "react";
 import { RateContext } from "./App";
+
+
 export const fromShekelToX = (number, dollarRate, toCoin) => {
-  console.log("dollarRate:", dollarRate);
-  console.log("toCoin:", toCoin);
+   console.log( dollarRate);
+   console.log( toCoin);
   if (toCoin === "shekel") {
  // אם המטבע המבוקש הוא שקל, החזר את הסכום כפי שהוא
     return "₪" + Math.floor(number)
@@ -21,7 +23,7 @@ const List = (props) => {
   if (!props.arr || !Array.isArray(props.arr)) {
     return <p>אין נתונים להציג</p>;
   }
-  console.log(props.arr)
+
 
   let SummaryOfContributions = 0;
   let targetAmount = 10105000000;
