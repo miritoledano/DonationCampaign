@@ -1,74 +1,40 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+ 🌟 Donation Campaign 🌟
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application provides an immediate and convenient donation experience for users. The app allows you to view real-time updates on donation details.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- [Material-UI](https://mui.com): Utilization for efficient form configurations, lists, and buttons.
+- [axios](https://github.com/axios/axios): Library for making API requests.
+- [npm](npm): Library management website.
 
-### `npm start`
+## Using exchangerate-api.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project utilizes the API from [exchangerate-api.com](https://www.exchangerate-api.com) to retrieve information about exchange rates between the Shekel and the Dollar. Registration on the website is required to obtain a personal API key for project use in currency conversion.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Usage Instructions
 
-### `npm test`
+1. [Register on exchangerate-api.com](https://www.exchangerate-api.com) and obtain a personal API key.
+2. Add your API key to the project to enable its usage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contribution to the Project
 
-### `npm run build`
+I collaborated on this project with [Shira Kedem](https://github.com/ShiraKedem).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[MIT License](https://choosealicense.com/licenses/mit/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Copyright © 2023 [Miriam Toledano]
 
-### `npm run eject`
+## 📷 Project Images 📷
+![צילום מסך 2023-12-23 210646](https://github.com/miritoledano/DonationCampaign/assets/150906463/90672bc5-ea89-48d6-86af-98d4e7ff04e6)
+![צילום מסך 2023-12-23 210657](https://github.com/miritoledano/DonationCampaign/assets/150906463/66add5a0-1e90-4556-a225-f1a06e1e6a5b)
+![צילום מסך 2023-12-23 210714](https://github.com/miritoledano/DonationCampaign/assets/150906463/e7c70b67-4c7b-40e8-89d8-633801646bf9)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# DonationCampaign
->>>>>>> 3251061233cf969b9cb085715d2ed788525c0477
