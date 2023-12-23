@@ -25,7 +25,7 @@ I collaborated on this project with [Shira Kedem](https://github.com/ShiraKedem)
 
 [MIT License](https://choosealicense.com/licenses/mit/)
 
-Copyright © 2023 [Miriam Toldeo]
+Copyright © 2023 [Miriam Toledano]
 
 ## 📷 Project Images 📷
 ![צילום מסך 2023-12-23 210646](https://github.com/miritoledano/DonationCampaign/assets/150906463/90672bc5-ea89-48d6-86af-98d4e7ff04e6)
