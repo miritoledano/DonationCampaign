@@ -6,8 +6,22 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import "./Nav.css";
 import { blue } from "@mui/material/colors";
-import ColorLens from "@mui/icons-material/ColorLens";
-
+ import ColorLens from "@mui/icons-material/ColorLens";
+ export const isColorDark = (hexColor) => {
+  const threshold = 300;
+  const rgb = hexToRgb(hexColor);
+  const sum = rgb.r + rgb.g + rgb.b;
+// אם קטן מ 300 זה אומר שזה בהיר אחרת זה אומר שזה
+  return sum < threshold;
+}
+export const hexToRgb = (hex) => {
+  // כאשר מדובר בקוד צבע של HEX, המרת הערך ל-RGB יכולה להתבצע כך
+  const bigint = parseInt(hex.slice(1), 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+  return { r, g, b };
+}
 
 
 
@@ -27,21 +41,7 @@ const NavBar = ({ onCoinChange }) => {
 }
 // פונקציה שמחשבנת האם הצבע חשוך 
 
-const isColorDark = (hexColor) => {
-  const threshold = 300;
-  const rgb = hexToRgb(hexColor);
-  const sum = rgb.r + rgb.g + rgb.b;
-// אם קטן מ 300 זה אומר שזה בהיר אחרת זה אומר שזה
-  return sum < threshold;
-}
-const hexToRgb = (hex) => {
-  // כאשר מדובר בקוד צבע של HEX, המרת הערך ל-RGB יכולה להתבצע כך
-  const bigint = parseInt(hex.slice(1), 16);
-  const r = (bigint >> 16) & 255;
-  const g = (bigint >> 8) & 255;
-  const b = bigint & 255;
-  return { r, g, b };
-}
+ 
   const [value, setValue] = React.useState(0);
 
 
@@ -115,6 +115,7 @@ const hexToRgb = (hex) => {
 
         למעבר בין שקל/דולר
       </Button>
+     
 
       <input
             type="color"

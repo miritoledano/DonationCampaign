@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
    
     axios.get('https://v6.exchangerate-api.com/v6/46828ba661dec8e8231606a5/latest/USD').then(res => {
-      setRate({ ...rate, dollar: res.data.conversion_rates.ILS });
+      setRate({ ...rate, dollar: res.data. conversion_rates.ILS });
     }).catch(err => {
       //הודעה מתאימה אא להביא מהשרת...
     })

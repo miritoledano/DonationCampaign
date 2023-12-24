@@ -1,4 +1,4 @@
-
+import Button from "@mui/material/Button";
 import { useContext } from "react";
 import { RateContext } from "./App";
 import React, { useState } from "react";
@@ -8,6 +8,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import Typography from "@mui/material/Typography";
 import { FixedSizeList } from "react-window";
 import List from "./List";
+
+
 export const fromShekelToX = (number, dollarRate, toCoin) => {
   if (toCoin === "shekel") {
     // אם המטבע המבוקש הוא שקל, החזר את הסכום כפי שהוא
@@ -23,8 +25,12 @@ export const fromShekelToX = (number, dollarRate, toCoin) => {
 }
 
 const Donations = (props) => {
+  
   const [filteredArr, setFilteredArr] = useState(props.arr);
+  const [sortingType, setSortingType] = useState(""); // נוסיף את המשתנה לסוג המיון
   let rate = useContext(RateContext);
+  
+
   const handleSearch = (event) => {
     // toLowerCase()=מביא הכול באותיות קטנות שאם מישהו יקליד באותיות גדולות ידע לזהות 
     // trim()=מסיר לי רווחים שאם יה ידע לקחת
@@ -37,6 +43,20 @@ const Donations = (props) => {
     });
 
     setFilteredArr(filteredArr);
+  };
+  const sortAmount = () => {
+    const sortedData = [...filteredArr];
+    sortedData.sort((a, b) => parseFloat(b.sum) - parseFloat(a.sum));
+    setFilteredArr(sortedData);
+    setSortingType("amount");
+  };
+
+  // פונקציה למיון התרומות לפי תאריך
+  const sortDate = () => {
+    const sortedData = [...filteredArr];
+    sortedData.sort((a, b) => a.DateOfDonation - b.DateOfDonation);
+    setFilteredArr(sortedData);
+    setSortingType("date");
   };
 // פונקציה לחישוב כמה זמן עבר מהרגע שתרם לי
   function CalculateDate(date) {
@@ -70,16 +90,26 @@ const Donations = (props) => {
     }
     return x;
   }
+  
+   
+  
+  
 // הצגת נתוני התרומות
   function renderRow(props) {
     const { index, style, data } = props;
     const sortedData = [...data.filteredArr];
 // ממין לי לפי הסכום מהגבוה לנמוך
-    sortedData.sort((a, b) => parseFloat(b.sum) - parseFloat(a.sum));
+// sortedData.sort((a, b) => parseFloat(b.sum) - parseFloat(a.sum));
+//  sortedData.sort((a,b)=>parseFloat(b.data)-parseFloat(a.data));
+   
+   
 
     const donation =sortedData[index];
 
     return (
+    
+      
+      
     // ListItem להצגת התרומות ברשימה  לקחנו צורה מסיפרית 
       <ListItem style={style} key={index} component="div" disablePadding>
         <ListItemButton sx={{ justifyContent: "space-between" }}>
@@ -103,6 +133,23 @@ const Donations = (props) => {
 
   return (
     <>
+    <Box>
+      <Button
+        id="dolarsShekels"
+        variant="contained"
+        onClick={sortDate}
+        style={{ marginRight: "5px" }}
+      >
+        למיון לפי תאריך
+      </Button>
+      <Button
+        id="dolarsShekels"
+        variant="contained"
+        onClick={sortAmount}
+        style={{ marginRight: "10px" }}
+      >
+        למיון לפי סכום
+      </Button>
       <div className="donations" style={{ textAlign: "center" }}>
         <div className="searchBox">
           <input
@@ -144,6 +191,7 @@ const Donations = (props) => {
       </div>
       <List arr={props.arr}/>
       {/* הצגת הריבעוי סיכום */}
+      </Box>
     </>
   );
 }

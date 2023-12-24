@@ -10,6 +10,8 @@ import { TextField, colors } from "@mui/material";
 import { useContext } from "react";
 import { RateContext } from "./App";
 import { blue } from "@mui/material/colors";
+
+
 export const fromXToShekel = (sumInX, doolarRate, fromCoin) => {
   if (fromCoin === "shekel") {
     // אם המטבע המבוקש הוא שקל, החזר את הסכום כפי שהוא
